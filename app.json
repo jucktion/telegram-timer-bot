@@ -1,7 +1,7 @@
 {
     "name": "Telegram Timer Bot",
-    "description": "Telegram timer bot for using to remind yourself for water and other things",
-    "repository": "https://github.com/jucktion/telegram-timer",
+    "description": "Telegram timer bot to remind yourself of repeatitive task on all of your devices with Telegram app",
+    "repository": "https://github.com/jucktion/telegram-timer-bot",
     "logo": "https://pbs.twimg.com/profile_images/764116951425622021/mtvK_yjw_400x400.jpg",
     "keywords": ["telgram", "python", "telegrambot","timer"]
   }
