@@ -11,9 +11,14 @@ from datetime import datetime,timedelta
 try:
    URL = os.environ['URL']
    TIMER = os.environ['TIMER']
+except:
+    from env import URL,TIMER
+
+try:
    TG_API = os.environ['TG_API']
 except:
-    from env import *
+   from env import TG_API
+   
 
 bot = telebot.TeleBot(TG_API)
 
@@ -155,11 +160,14 @@ def handle_query(call):
 
 
 if __name__ == "__main__":
-   try:
-        print("Running Timer...")
-        print(f"API: {TG_API}")
-        print(f"DURATION: {TIMER}")
-        bot.polling(none_stop=True, interval=0, timeout=0)
-   except:
-        time.sleep(10)
+    if(TG_API):
+        try:
+            print("Running Timer...")
+            print(f"API: {TG_API}")
+            print(f"DURATION: {TIMER}")
+            bot.polling(none_stop=True, interval=0, timeout=0)
+        except:
+            time.sleep(10)
+    else:
+        print('SET THE TELEGRAM API FIRST')
 

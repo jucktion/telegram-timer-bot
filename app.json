@@ -1,7 +1,30 @@
 {
     "name": "Telegram Timer Bot",
-    "description": "Telegram timer bot to remind yourself of repeatitive task on all of your devices with Telegram app",
+    "description": "Telegram timer bot to remind yourself of repeatitive tasks on all of your devices with the Telegram app",
     "repository": "https://github.com/jucktion/telegram-timer-bot",
+    "website": "https://www.jucktion.com/tech/",
     "logo": "https://pbs.twimg.com/profile_images/764116951425622021/mtvK_yjw_400x400.jpg",
-    "keywords": ["telgram", "python", "telegrambot","timer"]
+    "keywords": ["telgram", "python", "telegrambot","timer"],
+    "env":{
+      "TG_API": {
+        "description": "Telegram bot API token.",
+        "value": ""
+      },
+      "TIMER": {
+        "description": "Timer duration (in seconds)",
+        "value": "3600",
+        "required": false
+      },
+      "URL": {
+        "description": "Link for the button",
+        "value": "https://www.jucktion.com",
+        "required": false
+      }
+    },
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
   }

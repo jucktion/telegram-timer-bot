@@ -4,11 +4,11 @@ This bot will help you set a timer on a device and have all your devices using T
 
 ## Environment variables
 
-* `TG_API` - Telegram Bot API which controls messaging
+* `TG_API` - Telegram Bot API which controls messaging (required)
 
-* `URL` - URL if you want to open a url when timer runs out
+* `URL` - URL if you want to open a url when timer runs out (optional)
 
-* `TIMER` - Timer duration for the timer
+* `TIMER` - Timer duration for the timer (optional)
 
 ### Local Deployment
 
