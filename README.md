@@ -6,9 +6,11 @@ This bot will help you set a timer on a device and have all your devices using T
 
 * `TG_API` - Telegram Bot API which controls messaging (required)
 
-* `URL` - URL if you want to open a url when timer runs out (optional)
+* `URL` - URL if you want to open a url when timer runs out (optional) 
+  * Default: [https://www.jucktion.com](https://www.jucktion.com)
 
 * `TIMER` - Timer duration for the timer (optional)
+  * Default: 3600
 
 ### Local Deployment
 
@@ -25,7 +27,9 @@ To set this up you will need
 
 * Telegram bot API from [BotFather](https://t.me/botfather)
 * A heroku account for deployment
+* Deploy using the deploy [button](#deploy) below
 * Setup environment variables mentioned above in your app settings
+* Start chat with the bot
 
 
 ## Commands

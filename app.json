@@ -7,7 +7,7 @@
     "keywords": ["telgram", "python", "telegrambot","timer"],
     "env":{
       "TG_API": {
-        "description": "Telegram bot API token.",
+        "description": "Telegram bot API token. Get one at: https://t.me/botfather",
         "value": ""
       },
       "TIMER": {
