@@ -48,16 +48,20 @@ To set this up you will need
 
 ## Start screen
 
-<img src="screenshots/start-screen.jpg" width="50%" alt="Start the bot">
+<img src="https://github.com/jucktion/telegram-timer-bot/raw/main/screenshots/start-screen.jpg" width="50%" alt="Start the bot">
 
 ## Change the timer duration
 
-<img src="screenshots/change-timer-duration.jpg" width="50%" alt="Change the duration of the timer">
+<img src="https://github.com/jucktion/telegram-timer-bot/raw/main/screenshots/change-timer-duration.jpg" width="50%" alt="Change the duration of the timer">
 
 ## Check remaining time
 
-<img src="screenshots/check-remaining-time.jpg" width="50%" alt="Check remaining time">
+<img src="https://github.com/jucktion/telegram-timer-bot/raw/main/screenshots/check-remaining-time.jpg" width="50%" alt="Check remaining time">
 
 ## Open Link
 
-<img src="screenshots/open-link.jpg" width="50%" alt="Open Link">
+<img src="https://github.com/jucktion/telegram-timer-bot/raw/main/screenshots/open-link.jpg" width="50%" alt="Open Link">
+
+# License
+
+GNU/GPL Version 3
