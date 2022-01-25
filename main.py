@@ -21,8 +21,8 @@ except:
    
 
 bot = telebot.TeleBot(TG_API)
-import logging
-telebot.logger.setLevel(logging.DEBUG)
+# import logging
+# telebot.logger.setLevel(logging.DEBUG)
 
 tick_icon = u"\u2714"
 globe_icon = u"\U0001F310"
@@ -37,8 +37,9 @@ def delete_old_msg(chat_id, messages):
         bot.delete_message(chat_id, messages[0])
         messages.pop(0)
 
-def remain(t):
-  return str(f"{int(t/3600)}H {int((t/60)%60) if (int(t/3600)>0) else int(t/60)}m {int(t%60)}s")
+def remain(time):
+    t = int(time)
+    return str(f"{int(t/3600)}H {int((t/60)%60) if (int(t/3600)>0) else int(t/60)}m {int(t%60)}s")
 
 def get_end_time():
     return time.mktime((datetime.now() + timedelta(seconds=int(TIMER))).timetuple())
