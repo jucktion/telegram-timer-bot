@@ -38,7 +38,7 @@ def delete_old_msg(chat_id, messages):
         messages.pop(0)
 
 def remain(t):
-  return str(f"{int(t/3600)}H {int((t/60)%60) if t/3600>0 else int(t/60)}m {int(t%60)}s")
+  return str(f"{int(t/3600)}H {int((t/60)%60) if (int(t/3600)>0) else int(t/60)}m {int(t%60)}s")
 
 def get_end_time():
     return time.mktime((datetime.now() + timedelta(seconds=int(TIMER))).timetuple())
