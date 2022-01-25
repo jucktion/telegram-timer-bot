@@ -21,8 +21,8 @@ except:
    
 
 bot = telebot.TeleBot(TG_API)
-# import logging
-# telebot.logger.setLevel(logging.DEBUG)
+import logging
+telebot.logger.setLevel(logging.DEBUG)
 
 tick_icon = u"\u2714"
 globe_icon = u"\U0001F310"
@@ -195,6 +195,7 @@ if __name__ == "__main__":
             print("Running Timer...")
             print(f"API: {TG_API}")
             print(f"DURATION: {TIMER}")
+            print(f"LINK: {URL}")
             bot.polling(none_stop=True, interval=0, timeout=0)
         except:
             time.sleep(10)
