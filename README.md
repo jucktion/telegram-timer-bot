@@ -12,6 +12,9 @@ This bot will help you set a timer on a device and have all your devices using T
 * `TIMER` - Timer duration for the timer (optional)
   * Default: 3600
 
+* `DEBUG` - Debug the application (0 or 1) (optional)
+  * Default: 0 (False)
+
 ### Local Deployment
 
 * Create a virtual environment for your bot

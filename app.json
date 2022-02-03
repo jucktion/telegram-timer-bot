@@ -19,6 +19,11 @@
         "description": "Link for the button",
         "value": "https://www.jucktion.com",
         "required": false
+      },
+      "DEBUG": {
+        "description": "Turn on debug. 1 for True, 0 for False",
+        "value": "0",
+        "required": false
       }
     },
     "formation": {

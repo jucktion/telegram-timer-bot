@@ -11,8 +11,9 @@ from datetime import datetime,timedelta
 try:
    URL = os.environ['URL']
    TIMER = os.environ['TIMER']
+   DEBUG = os.environ['DEBUG']
 except:
-    from env import URL,TIMER
+    from env import URL,TIMER,DEBUG
 
 try:
    TG_API = os.environ['TG_API']
@@ -21,8 +22,11 @@ except:
    
 
 bot = telebot.TeleBot(TG_API)
-# import logging
-# telebot.logger.setLevel(logging.DEBUG)
+
+#Run debugger if debug is on
+if bool(DEBUG):
+    import logging
+    telebot.logger.setLevel(logging.DEBUG)
 
 tick_icon = u"\u2714"
 globe_icon = u"\U0001F310"
@@ -140,7 +144,7 @@ def handle_command_check(message):
 
     isitgone = 'remaining' if (remaining > 0) else 'not set' if (end_time == 0) else 'elapsed'
     #print('before remaining id: ',message.message_id, remaining_messages, len(remaining_messages))
-    if remaining > 0 or message.message_id == remaining_messages[0]:
+    if remaining > 0 or message.message_id in remaining_messages:
         remaining_message = bot.edit_message_text(chat_id=message.chat.id,
                     reply_markup=check_remaining(),
                     text=f"Time {isitgone}: {remaining_string}",
